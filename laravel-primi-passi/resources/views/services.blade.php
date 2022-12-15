@@ -17,7 +17,7 @@
             <a class="nav-link" href="{{route('about')}}">About</a>
         </nav>
     </header>
-    <h1>Hello World</h1>
+    <h1>Services</h1>
 </body>
 
 </html>
