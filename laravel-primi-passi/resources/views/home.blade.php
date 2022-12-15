@@ -17,7 +17,22 @@
             <a class="nav-link" href="{{route('about')}}">About</a>
         </nav>
     </header>
-    <h1>Hello World</h1>
+    <h1 class="text-center">Hello World</h1>
+
+    <div class="container">
+        <h2>{{$name}}</h2>
+        <p>Language used: {{$language}}</p>
+        <h3>Framework list</h3>
+        @if (count($frameworks) > 0)
+        <ul>
+            @foreach ($frameworks as $framework)
+            <li>{{$framework}}</li>
+            @endforeach
+        </ul>
+        @else
+        <p>No frameworks available</p>
+        @endif
+    </div>
 </body>
 
 </html>

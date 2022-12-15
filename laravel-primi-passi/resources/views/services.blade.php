@@ -17,7 +17,7 @@
             <a class="nav-link" href="{{route('about')}}">About</a>
         </nav>
     </header>
-    <h1>Services</h1>
+    <h1 class="text-center">Services</h1>
 </body>
 
 </html>

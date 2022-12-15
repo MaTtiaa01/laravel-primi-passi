@@ -14,7 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        "name" => "Laravel",
+        "language" => "php",
+        "frameworks" => [
+            "Bootstrap",
+            "Vue js",
+            "Laravel"
+        ]
+    ];
+    return view('home', $data);
 })->name("home");
 
 Route::get('/services', function () {
